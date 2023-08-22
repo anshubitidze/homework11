@@ -2,16 +2,15 @@
 .grid_container{
     width: 1440px;
     height: 100%;
-    margin: auto;
+    margin: auto 40px;
     gap: 20px;
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 120px 300px 160px 300px ;
     grid-template-areas: "main_header main_header main_header"
                         "main_section main_section section_New"
                         "first_part small_section section_New"
-                        "main_footer main_footer main_footer";
+                        "card1  card2 card3";
 }
 /* grid */
 
@@ -132,12 +131,9 @@
 }
 /* small section */
 /* footer */
-.main_footer{
-    margin: 64px 0 48px ;
-    display: flex;
-    grid-area: main_footer;    
-}
+
 .footer_card{
+    margin: 64px 0 48px ;
     display: flex;
     gap: 20px;
 }
@@ -174,5 +170,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
 }
 /* footer */
